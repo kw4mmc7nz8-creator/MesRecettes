@@ -1,5 +1,5 @@
-/* MesRecettes V1 : cache de l'interface uniquement, jamais des recettes personnelles. */
-const CACHE='mesrecettes-shell-v1-20261120';
+/* MesRecettes V2 : cache de l'interface uniquement, jamais des recettes personnelles. */
+const CACHE='mesrecettes-shell-v2-20261121';
 const SHELL=['./','./index.html','./style.css','./app.js','./manifest.webmanifest','./vendor/jszip.min.js','./assets/icon-192.png','./assets/icon-512.png','./assets/viandes.webp','./assets/poissons.webp','./assets/gratins.webp','./assets/quiches.webp','./assets/pates.webp','./assets/desserts.webp','./assets/sauces.webp'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('mesrecettes-shell-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});

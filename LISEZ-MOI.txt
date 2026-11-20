@@ -1,35 +1,13 @@
-MesRecettes V1 — 20 novembre 2026
+MesRecettes V2 — 21 novembre 2026
 
-INSTALLATION SUR GITHUB PAGES
-1. Décompresser MesRecettesV1.zip.
-2. Mettre le CONTENU du dossier MesRecettesV1 à la racine du dépôt GitHub Pages (index.html, app.js, style.css, sw.js, manifest.webmanifest, assets/, vendor/).
-3. Activer GitHub Pages dans les paramètres du dépôt si nécessaire.
-4. Ouvrir l'URL HTTPS dans Safari sur l'iPhone puis Partager > Sur l'écran d'accueil.
-5. Conserver les fichiers sur GitHub Pages ; les recettes sont stockées localement sur chaque iPhone, PAS sur GitHub.
+INSTALLATION : copier le CONTENU de ce dossier à la racine du dépôt GitHub Pages (remplacer les anciens fichiers). Ne pas supprimer les données Safari.
 
-FONCTIONNALITÉS V1
-- Sept catégories fixes et leurs pictogrammes sélectionnés.
-- Recherche par nom, tri alphabétique, origine visible.
-- Création/modification/suppression avec confirmation, gestion des doublons.
-- Liens, PDF depuis Fichiers, photos depuis caméra/photothèque, photographie de documents papier.
-- Miniatures, consultation d'images, visualisation PDF intégrée (selon prise en charge iOS).
-- Un brouillon automatique pour une création interrompue.
-- Sauvegarde ZIP complète, restauration confirmée, export/import de recette individuelle.
-- Web Share API si disponible, téléchargement en secours.
-- Stockage local IndexedDB, interface disponible hors ligne après premier chargement.
+Compatibilité : base IndexedDB « mesrecettes-v1 » conservée, migration de schéma version 1 vers 2, recettes existantes conservées.
 
-LIMITES IMPORTANTES DE CETTE PREMIÈRE VERSION
-- La conversion AUTOMATIQUE d'une page Internet en PDF n'est pas disponible depuis cette application statique : le bouton conserve le lien et vous en avertit. Vous pouvez produire un PDF depuis Safari et l'ajouter via « PDF dans Fichiers ». Ne pas interpréter ce bouton comme une conversion PDF réussie.
-- « Scanner un papier » utilise la capture photo de l'iPhone ; il n'ouvre pas forcément le scanner natif multipage d'iOS. Il est possible d'importer ensuite un PDF obtenu dans Notes/Fichiers.
-- La Web Share API peut ne pas fonctionner avec de grosses archives ou si le fichier prend trop de temps à préparer ; dans ce cas, téléchargement de secours.
-- L'affichage des PDF dans l'application dépend du moteur PDF d'iOS.
-- Le maintien de l'écran allumé est demandé si la Wake Lock API est disponible ; iOS peut le refuser.
-- La sauvegarde est MANUELLE. Ne jamais considérer les données locales Safari comme une sauvegarde permanente. Enregistrer régulièrement une copie ZIP dans Fichiers (idéalement hors de l'iPhone).
-- Limite de 35 Mo par document et 350 Mo par archive pour cette V1, ajustable après essais.
-- Les archives ZIP ne sont pas chiffrées : elles peuvent contenir des documents personnels. Les partager uniquement avec des destinataires de confiance.
-- Cette V1 n'a pas été testée sur un iPhone réel : tester avec des données non essentielles avant toute utilisation importante.
+Nouveautés : catégories modifiables, catégorie Légumes, commentaires facultatifs, boutons sources renommés, partage avec icône, sauvegarder/restaurer regroupés, retour réduit, sauvegardes ZIP comprenant les catégories et les commentaires.
 
-SÉCURITÉ
-- Ne jamais publier vos sauvegardes dans le dépôt GitHub public.
-- Les fichiers de recette importés sont validés, mais n'ouvrez pas les PDF ou liens de sources inconnues.
-- Les données restent locales ; aucune synchronisation entre iPhone.
+IMPORTANT : sur un site tiers, une application statique GitHub Pages ne peut pas garantir une conversion automatique PDF. Le bouton Page Web → PDF conserve le lien et explique comment importer le PDF depuis Safari. Aucune conversion automatique universelle n'est revendiquée.
+
+AVANT LA MISE À JOUR : depuis la V1, faites une sauvegarde complète et vérifiez qu'elle se trouve dans Fichiers. Après installation, tester les recettes existantes, les photos, les PDF et la restauration sur un appareil de test si possible.
+
+L’icône Légumes utilise provisoirement un pictogramme 🥦 : le dessin exact choisi dans la conversation n’est pas présent dans l’archive V1.
