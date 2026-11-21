@@ -1,13 +1,26 @@
-MesRecettes V2 — 21 novembre 2026
+MesRecettes V3 — 21 novembre 2026
 
-INSTALLATION : copier le CONTENU de ce dossier à la racine du dépôt GitHub Pages (remplacer les anciens fichiers). Ne pas supprimer les données Safari.
+1. Décompresser MesRecettesV3.zip.
+2. Envoyer les fichiers et dossiers index.html, app.js, style.css, sw.js, manifest.webmanifest, assets/ et vendor/ à la racine de GitHub Pages. NE PAS publier le dossier cloudflare-worker/ dans GitHub Pages.
+3. Attendre la publication GitHub Pages, puis relancer l’application.
 
-Compatibilité : base IndexedDB « mesrecettes-v1 » conservée, migration de schéma version 1 vers 2, recettes existantes conservées.
+NOUVEAUTÉS
+- Catégories fixes, sans bouton Éditer les catégories.
+- Notifications grises temporaires supprimées.
+- Photos converties en JPEG de 1600 pixels maximum et qualité 80 %.
+- Icônes Paramètres harmonisées en noir ; présentation générale conservée.
+- Nouvelle fenêtre de sauvegarde locale.
+- Bouton Retour agrandi ; catégories resserrées ; formulaire réordonné.
+- Service de conversion PDF configurable dans Paramètres.
 
-Nouveautés : catégories modifiables, catégorie Légumes, commentaires facultatifs, boutons sources renommés, partage avec icône, sauvegarder/restaurer regroupés, retour réduit, sauvegardes ZIP comprenant les catégories et les commentaires.
+IMPORTANT : LA CONVERSION WEB → PDF N'EST PAS ACTIVE PAR DÉFAUT.
+Le dossier cloudflare-worker/ contient le code source d’un prototype Cloudflare Browser Rendering.
+Il faudra créer un compte Cloudflare, déployer ce Worker, puis indiquer son URL HTTPS
+dans Paramètres → Conversion Web → PDF. Ce prototype n’a pas été testé en conditions
+réelles avec Marmiton ni le Journal des Femmes. Certains sites peuvent refuser
+les navigateurs automatisés. L’URL originale est toujours conservée.
 
-IMPORTANT : sur un site tiers, une application statique GitHub Pages ne peut pas garantir une conversion automatique PDF. Le bouton Page Web → PDF conserve le lien et explique comment importer le PDF depuis Safari. Aucune conversion automatique universelle n'est revendiquée.
-
-AVANT LA MISE À JOUR : depuis la V1, faites une sauvegarde complète et vérifiez qu'elle se trouve dans Fichiers. Après installation, tester les recettes existantes, les photos, les PDF et la restauration sur un appareil de test si possible.
-
-L’icône Légumes utilise provisoirement un pictogramme 🥦 : le dessin exact choisi dans la conversation n’est pas présent dans l’archive V1.
+La V3 utilise volontairement une nouvelle base IndexedDB (mesrecettes-v3).
+Les données V2 ne sont pas migrées : c’est conforme à la phase de tests.
+Les recettes et leurs fichiers restent locaux sur l’iPhone, sauf l’URL transmise
+à Cloudflare pour une conversion demandée explicitement.
