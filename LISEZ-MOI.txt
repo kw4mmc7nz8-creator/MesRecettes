@@ -1,26 +1,17 @@
-MesRecettes V3 — 21 novembre 2026
+MesRecettes V4 — application personnelle pour iPhone
+================================================
 
-1. Décompresser MesRecettesV3.zip.
-2. Envoyer les fichiers et dossiers index.html, app.js, style.css, sw.js, manifest.webmanifest, assets/ et vendor/ à la racine de GitHub Pages. NE PAS publier le dossier cloudflare-worker/ dans GitHub Pages.
-3. Attendre la publication GitHub Pages, puis relancer l’application.
+Déploiement : placez le contenu de ce dossier à la racine de votre dépôt GitHub Pages.
+Ne déposez pas le dossier englobant « MesRecettesV4 » dans le dépôt : déposez les fichiers qu'il contient.
 
-NOUVEAUTÉS
-- Catégories fixes, sans bouton Éditer les catégories.
-- Notifications grises temporaires supprimées.
-- Photos converties en JPEG de 1600 pixels maximum et qualité 80 %.
-- Icônes Paramètres harmonisées en noir ; présentation générale conservée.
-- Nouvelle fenêtre de sauvegarde locale.
-- Bouton Retour agrandi ; catégories resserrées ; formulaire réordonné.
-- Service de conversion PDF configurable dans Paramètres.
+Modifications V4 :
+- Retrait intégral de la conversion automatique Page Web → PDF et du service Cloudflare.
+- Quatre sources conservées : lien Internet, appareil photo, photothèque, PDF existant.
+- Illustrations Légumes remplacée par le visuel fourni.
+- Icônes Importer et Paramètres redessinées d'après la capture MesListes.
+- Icône iPhone : aplat rouge sans dégradé, toque blanche isolée.
+- Cache hors ligne renouvelé ; nouvelle base de données de tests V4.
 
-IMPORTANT : LA CONVERSION WEB → PDF N'EST PAS ACTIVE PAR DÉFAUT.
-Le dossier cloudflare-worker/ contient le code source d’un prototype Cloudflare Browser Rendering.
-Il faudra créer un compte Cloudflare, déployer ce Worker, puis indiquer son URL HTTPS
-dans Paramètres → Conversion Web → PDF. Ce prototype n’a pas été testé en conditions
-réelles avec Marmiton ni le Journal des Femmes. Certains sites peuvent refuser
-les navigateurs automatisés. L’URL originale est toujours conservée.
-
-La V3 utilise volontairement une nouvelle base IndexedDB (mesrecettes-v3).
-Les données V2 ne sont pas migrées : c’est conforme à la phase de tests.
-Les recettes et leurs fichiers restent locaux sur l’iPhone, sauf l’URL transmise
-à Cloudflare pour une conversion demandée explicitement.
+Attention : le rouge exact de l'application Jow n'a pas pu être certifié sans référence colorimétrique.
+Les données de test des versions précédentes ne sont pas migrées.
+L'application n'a pas été testée sur un iPhone physique.

@@ -29,3 +29,10 @@ main{padding-top:21px}
 .restore-symbol{font-size:38px;line-height:1}
 .backup-modal .modal-actions .btn{background:white;border:1px solid #f04430;color:#a93121}
 @media(max-height:780px){.category{min-height:103px}.category img{height:51px}.category-list{gap:7px}.search{margin-bottom:10px}}
+
+/* V4 : pictogrammes d'en-tête, référence MesListes */
+.top-action svg{width:38px;height:38px;display:block;flex-shrink:0}
+.top-action small{font-size:10px;line-height:1.1;white-space:normal;text-align:center}
+.topbar{grid-template-columns:88px minmax(0,1fr) 88px}
+.topbar h1{font-size:clamp(19px,5vw,24px)}
+.source-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
