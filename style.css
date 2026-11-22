@@ -49,3 +49,20 @@ main{padding-top:21px}
 .source-actions .source-symbol{display:block;width:53px;height:43px;object-fit:contain;flex-shrink:0}
 .source-actions button{min-height:79px}
 .category img{object-fit:contain;object-position:center;width:min(100%,112px);height:clamp(54px,7.7dvh,75px)}
+
+/* V6 — fiche recette compacte, adaptée à l'écran de l'iPhone */
+main:has(.detail-card){padding-top:12px;padding-bottom:16px}
+.detail-card{padding:13px 15px 12px;margin-bottom:10px;border-radius:15px}
+.detail-card h2{font-size:21px;line-height:1.18;margin:0 0 9px}
+.detail-card p{font-size:15px;line-height:1.28;margin:5px 0;overflow-wrap:anywhere}
+main:has(.detail-card) .section-title{font-size:16px;margin:12px 0 7px;line-height:1.2}
+main:has(.detail-card) .gallery{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+main:has(.detail-card) .thumb{width:100%;max-width:105px;aspect-ratio:1;border-radius:10px}
+main:has(.detail-card) .attachment-link{display:flex;align-items:center;gap:7px;min-height:42px;padding:8px 10px;margin:5px 0;border-radius:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.attachment-icon{flex:0 0 auto;font-size:17px}
+.attachment-label{display:block;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px}
+main:has(.detail-card) .action-grid{margin-top:14px;gap:8px}
+main:has(.detail-card) .detail-action{min-height:62px;padding:7px 5px;gap:3px;border-radius:12px}
+main:has(.detail-card) .detail-action svg{width:24px;height:24px}
+main:has(.detail-card) .detail-action span{font-size:12px;line-height:1.15}
+@media(max-height:740px){main:has(.detail-card) .thumb{max-width:88px}main:has(.detail-card) .detail-action{min-height:56px}main:has(.detail-card) .detail-card p{font-size:14px}}

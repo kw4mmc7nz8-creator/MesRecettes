@@ -1,6 +1,9 @@
-MesRecettes V5
+MesRecettes V6
 
-Décompressez le ZIP et transférez son contenu à la racine du dépôt GitHub Pages.
-V5 : icônes de sources série 1 ; quatre boutons de fiche colorés et encadrés ; nettoyage des illustrations de catégories ; affichage PDF avec demande d'ajustement en largeur (selon le lecteur iOS).
+Fiche recette compacte : cartouche, photo, PDF, liens et boutons moins hauts.
+Ordre : Nom, Origine, Catégorie, Commentaires.
+Affichage du nom du PDF importé et du début de chaque URL, avec troncature.
+Nom du PDF conservé dans les sauvegardes et échanges.
+Illustration Poissons nettoyée.
 
-Conservez les fichiers vendor et assets. Le service worker utilise un nouveau cache V5.
+Décompresser puis transférer les fichiers à la racine de GitHub Pages.
