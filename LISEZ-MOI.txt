@@ -1,4 +1,10 @@
-MesRecettes V7 — installation : décompressez cette archive et publiez tous les fichiers à la racine de votre dépôt GitHub Pages.
+MesRecettes V8 — installation : décompressez cette archive et publiez tous les fichiers à la racine de votre dépôt GitHub Pages.
 Conservez vos sauvegardes locales avant toute mise à jour.
-V7 : nouvelles illustrations entières pour Desserts et Bases et sauces ; rubrique « Liens et documents de la recette » ; paramètre PDF Fit et accès au lecteur natif iPhone.
+V8 : nouvelles illustrations entières pour Desserts et Bases et sauces ; rubrique « Liens et documents de la recette » ; paramètre PDF Fit et accès au lecteur natif iPhone.
 Attention : Safari iOS peut ignorer le paramètre de cadrage du PDF intégré ; le bouton « Ouvrir dans le lecteur PDF de l’iPhone » permet de contourner cette limite.
+
+V8 :
+- Ouverture directe des documents PDF dans le lecteur natif de l'iPhone.
+- Harmonisation des tailles des illustrations Poissons et Desserts.
+- Suppression des bandes noires présentes dans l'image Bases et sauces.
+- Données locales et sauvegardes préservées.

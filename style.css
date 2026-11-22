@@ -74,3 +74,14 @@ main:has(.detail-card) .detail-action span{font-size:12px;line-height:1.15}
 .viewer-content img{margin:auto;max-width:100%;max-height:100%;object-fit:contain}
 .viewer-tools{background:#fffaf7;display:flex;justify-content:center;padding:7px 10px calc(7px + env(safe-area-inset-bottom))}
 .viewer-tools button{font:inherit;color:#ad3224;background:white;border:1px solid #e8cfc6;border-radius:9px;padding:8px 12px}
+
+/* V8 — illustrations entières, dimensions visuelles harmonisées */
+.category img{width:100px!important;height:74px!important;max-width:100%;object-fit:contain!important;object-position:center!important;overflow:hidden!important}
+.category[data-category="poissons"] img{width:83px!important;height:64px!important}
+.category[data-category="desserts"] img{width:85px!important;height:64px!important}
+.category[data-category="sauces"] img{width:96px!important;height:70px!important}
+@media(max-height:780px){
+ .category img{height:58px!important}
+ .category[data-category="poissons"] img,.category[data-category="desserts"] img{height:52px!important}
+ .category[data-category="sauces"] img{height:56px!important}
+}
