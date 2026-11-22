@@ -1,17 +1,6 @@
-MesRecettes V4 — application personnelle pour iPhone
-================================================
+MesRecettes V5
 
-Déploiement : placez le contenu de ce dossier à la racine de votre dépôt GitHub Pages.
-Ne déposez pas le dossier englobant « MesRecettesV4 » dans le dépôt : déposez les fichiers qu'il contient.
+Décompressez le ZIP et transférez son contenu à la racine du dépôt GitHub Pages.
+V5 : icônes de sources série 1 ; quatre boutons de fiche colorés et encadrés ; nettoyage des illustrations de catégories ; affichage PDF avec demande d'ajustement en largeur (selon le lecteur iOS).
 
-Modifications V4 :
-- Retrait intégral de la conversion automatique Page Web → PDF et du service Cloudflare.
-- Quatre sources conservées : lien Internet, appareil photo, photothèque, PDF existant.
-- Illustrations Légumes remplacée par le visuel fourni.
-- Icônes Importer et Paramètres redessinées d'après la capture MesListes.
-- Icône iPhone : aplat rouge sans dégradé, toque blanche isolée.
-- Cache hors ligne renouvelé ; nouvelle base de données de tests V4.
-
-Attention : le rouge exact de l'application Jow n'a pas pu être certifié sans référence colorimétrique.
-Les données de test des versions précédentes ne sont pas migrées.
-L'application n'a pas été testée sur un iPhone physique.
+Conservez les fichiers vendor et assets. Le service worker utilise un nouveau cache V5.

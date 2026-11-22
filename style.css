@@ -36,3 +36,16 @@ main{padding-top:21px}
 .topbar{grid-template-columns:88px minmax(0,1fr) 88px}
 .topbar h1{font-size:clamp(19px,5vw,24px)}
 .source-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+
+/* V5: four equally sized, framed recipe actions */
+.detail-action{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:94px;border:1px solid transparent;padding:12px 7px}
+.detail-action svg{width:32px;height:32px;flex-shrink:0}
+.detail-action span{font-size:14px;line-height:1.15}
+.share-action{background:#e1f2ff;color:#267db8;border-color:#8dc9f0}
+.modify-action{background:#e3f4e5;color:#29854b;border-color:#8bcb98}
+.delete-action{background:#af2923;color:#fff;border-color:#af2923}
+.close-action{background:#e5e5e5;color:#444;border-color:#b6b6b6}
+.source-actions .source-symbol{display:block;width:53px;height:43px;object-fit:contain;flex-shrink:0}
+.source-actions button{min-height:79px}
+.category img{object-fit:contain;object-position:center;width:min(100%,112px);height:clamp(54px,7.7dvh,75px)}
