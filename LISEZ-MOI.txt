@@ -1,10 +1,18 @@
-MesRecettes V8 — installation : décompressez cette archive et publiez tous les fichiers à la racine de votre dépôt GitHub Pages.
-Conservez vos sauvegardes locales avant toute mise à jour.
-V8 : nouvelles illustrations entières pour Desserts et Bases et sauces ; rubrique « Liens et documents de la recette » ; paramètre PDF Fit et accès au lecteur natif iPhone.
-Attention : Safari iOS peut ignorer le paramètre de cadrage du PDF intégré ; le bouton « Ouvrir dans le lecteur PDF de l’iPhone » permet de contourner cette limite.
+MesRecettes V9 — version de test longue durée
 
-V8 :
-- Ouverture directe des documents PDF dans le lecteur natif de l'iPhone.
-- Harmonisation des tailles des illustrations Poissons et Desserts.
-- Suppression des bandes noires présentes dans l'image Bases et sauces.
-- Données locales et sauvegardes préservées.
+Installation : décompressez l'archive et publiez tous les fichiers à la racine de votre dépôt GitHub Pages, en conservant la même adresse que la V8. Ne supprimez pas les données Safari de l'application.
+
+AVANT LA MISE À JOUR : effectuez et conservez une sauvegarde ZIP complète de la V8 dans Fichiers (idéalement sur un autre support également).
+
+Évolutions V9 :
+- Avis facultatif de 0 à 5 étoiles, affiché sur la fiche et modifiable uniquement dans MODIFIER. Toucher deux fois la même note permet de revenir à zéro.
+- Retour du lecteur photo harmonisé : chevron blanc et RETOUR, titre Photo / scan centré.
+- Importation d'une recette de même nom : ajout d'un suffixe (1), (2), etc., sans écraser l'existante.
+- Restauration complète : toutes les recettes et pièces jointes doivent être valides avant confirmation et remplacement intégral. Une archive partiellement corrompue est refusée sans modification des données existantes.
+- Rappel de sauvegarde discret après 30 jours (délai initial à partir du premier lancement de V9 comportant des recettes). Il ne bloque pas l'utilisation.
+- Les huit catégories restent fixes, sans interface de modification.
+- Archives V8 compatibles : les recettes anciennes sans avis sont affichées avec cinq étoiles vides.
+
+IMPORTANT : les recettes restent uniquement dans le stockage local de l'iPhone. Conservez régulièrement une sauvegarde ZIP externe. Le rappel ne vérifie pas que le fichier a effectivement été conservé dans Fichiers.
+
+Tests recommandés sur iPhone : création, modification et effacement d'une note, annulation d'une modification, photo zoom, ouverture PDF native, lien Internet, partage/importation d'une recette notée, importation doublon, sauvegarde/restauration et réouverture hors connexion.
