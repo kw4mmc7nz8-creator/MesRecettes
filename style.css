@@ -66,3 +66,11 @@ main:has(.detail-card) .detail-action{min-height:62px;padding:7px 5px;gap:3px;bo
 main:has(.detail-card) .detail-action svg{width:24px;height:24px}
 main:has(.detail-card) .detail-action span{font-size:12px;line-height:1.15}
 @media(max-height:740px){main:has(.detail-card) .thumb{max-width:88px}main:has(.detail-card) .detail-action{min-height:56px}main:has(.detail-card) .detail-card p{font-size:14px}}
+
+/* V7: illustrations source recadrées avec marges internes et lecteur PDF adaptatif */
+.category img{object-fit:contain;object-position:center;overflow:visible}
+.viewer-content{width:100%;min-width:0;justify-content:stretch;align-items:stretch;overflow:hidden;background:#fff}
+.viewer-content iframe{display:block;width:100%;height:100%;min-width:0;max-width:100%;border:0}
+.viewer-content img{margin:auto;max-width:100%;max-height:100%;object-fit:contain}
+.viewer-tools{background:#fffaf7;display:flex;justify-content:center;padding:7px 10px calc(7px + env(safe-area-inset-bottom))}
+.viewer-tools button{font:inherit;color:#ad3224;background:white;border:1px solid #e8cfc6;border-radius:9px;padding:8px 12px}

@@ -1,9 +1,4 @@
-MesRecettes V6
-
-Fiche recette compacte : cartouche, photo, PDF, liens et boutons moins hauts.
-Ordre : Nom, Origine, Catégorie, Commentaires.
-Affichage du nom du PDF importé et du début de chaque URL, avec troncature.
-Nom du PDF conservé dans les sauvegardes et échanges.
-Illustration Poissons nettoyée.
-
-Décompresser puis transférer les fichiers à la racine de GitHub Pages.
+MesRecettes V7 — installation : décompressez cette archive et publiez tous les fichiers à la racine de votre dépôt GitHub Pages.
+Conservez vos sauvegardes locales avant toute mise à jour.
+V7 : nouvelles illustrations entières pour Desserts et Bases et sauces ; rubrique « Liens et documents de la recette » ; paramètre PDF Fit et accès au lecteur natif iPhone.
+Attention : Safari iOS peut ignorer le paramètre de cadrage du PDF intégré ; le bouton « Ouvrir dans le lecteur PDF de l’iPhone » permet de contourner cette limite.
